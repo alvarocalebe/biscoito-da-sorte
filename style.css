@@ -1,0 +1,206 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  background: linear-gradient(45deg, #190361 0%, #B0F 100%);
+  height: 100vh;
+  display: grid;
+  place-items: center;
+
+  animation: gradient 10s ease infinite;
+  background-size: 200% 200%;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+main {
+  width: 42.8rem;
+  padding: 4.8rem 6.4rem 6.4rem 6.4rem;
+  align-items: center;
+  background: #FFFFFF;
+
+  /* margin-top: 8rem; */
+  border-radius: 5px;
+  background: #FFF;
+  box-shadow: 0 2.0rem 5.0rem 0 rgba(0, 0, 0, 0.80);
+  text-align: center;
+
+}
+
+.hide {
+  display: none;
+}
+
+h1,
+p {
+  color: #34355B;
+  text-align: center;
+}
+
+h1 {
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.4rem;
+  font-weight: 700;
+  margin-bottom: 1.7rem;
+}
+
+p {
+  font-family: 'DM Sans', sans-serif;
+  margin-top: 1.4rem;
+  font-size: 15px;
+  font-weight: 400;
+  margin-bottom: 2rem;
+}
+
+.cookieSort:hover {
+  animation: tremer 0.5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes tremer {
+  0% {
+    transform: translate(1px, 1px) rotate(0deg);
+  }
+
+  10% {
+    transform: translate(-1px, -2px) rotate(-1deg);
+  }
+
+  20% {
+    transform: translate(-2px, 0px) rotate(1deg);
+  }
+
+  30% {
+    transform: translate(2px, 2px) rotate(0deg);
+  }
+
+  40% {
+    transform: translate(1px, -1px) rotate(1deg);
+  }
+
+  50% {
+    transform: translate(-1px, 2px) rotate(-1deg);
+  }
+
+  60% {
+    transform: translate(1px, 1px) rotate(0deg);
+  }
+
+  70% {
+    transform: translate(-2px, 1px) rotate(0deg);
+  }
+
+  80% {
+    transform: translate(2px, 1px) rotate(-1deg);
+  }
+
+  90% {
+    transform: translate(1px, 2px) rotate(0deg);
+  }
+
+  100% {
+    transform: translate(1px, -2px) rotate(-1deg);
+  }
+}
+
+/*screen 2*/
+
+.mySort {
+  width: 27.3rem;
+  height: 8.7rem;
+  background: #E4EDF1;
+  box-shadow: 2px 2px 2px rgba(85, 85, 85, 0.50);
+  margin: 0 auto 6rem;
+  animation: downtop 1.5s;
+}
+
+@keyframes downtop {
+  0% {
+    transform: translateY(14rem) scale(0);
+  }
+  10% {
+    transform: translateY(12.6rem) scale(0.1);
+  }
+  20% {
+    transform: translateY(11.2rem) scale(0.2);
+  }
+  30% {
+    transform: translateY(9.8rem) scale(0.3);
+  }
+  40% {
+    transform: translateY(8.4rem) scale(0.4);
+  }
+  50% {
+    transform: translateY(7rem) scale(0.5);
+  }
+ 60% {
+    transform: translateY(5.6rem) scale(0.6);
+  }
+  70% {
+    transform: translateY(4.2rem) scale(0.7);
+  }
+  80% {
+    transform: translateY(2.8rem) scale(0.8);
+  }
+  90% {
+    transform: translateY(1.4rem) scale(0.9);
+  }
+  100% {
+    transform: translateY(0) scale(1);
+    
+    
+  }
+}
+
+.mySort p {
+  color: #000;
+  text-align: center;
+  font-family: Dancing Script;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.screen2 button {
+  border-radius: .4rem;
+  border: none;
+  width: 17.4rem;
+  height: 5.2rem;
+  background: #FF9500;
+
+  color: #FFF;
+  text-align: center;
+  font-family: 'DM Sans';
+  font-size: 1.5rem;
+  font-weight: 700;
+
+  margin-top: 6rem;
+  cursor: pointer;
+  transition: background 0.3s;
+
+}
+
+.screen2 button:hover {
+  background: #ee8c03;
+}
